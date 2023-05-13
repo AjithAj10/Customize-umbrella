@@ -37,8 +37,11 @@ const buttons = [
 for (let i = 0; i < buttons.length; i++) {
   const { button, container, containerColor, uploadBtnColor, imageSrc } = buttons[i];
   button.addEventListener('click', () => {
+    //change container color
     container.style.backgroundColor = containerColor;
+    //change button color
     uploadBtn.style.backgroundColor = uploadBtnColor;
+    //change umbrella
     umbrellaImage.src = imageSrc;
   });
 }
